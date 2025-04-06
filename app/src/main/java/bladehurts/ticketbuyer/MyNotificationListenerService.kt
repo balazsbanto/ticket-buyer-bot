@@ -25,8 +25,11 @@ class MyNotificationListenerService : NotificationListenerService() {
             Log.d(TAG, "Text: $text")
             Log.d(TAG, "BigText: $bigText")
 
+            // TODO: implement ticket filter
 //            if (title.contains("Some ticket name", true)) {
             try {
+                // Can't open app just through the notification because of BAL restrictions
+                // Error message: Without BAL hardening this activity start would be allowed!
                 sbn.notification.contentIntent?.send()
                 Log.d(TAG, "Notification clicked via PendingIntent")
 
