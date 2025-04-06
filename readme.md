@@ -2,6 +2,8 @@
 
 TicketBuyerBot is a lightweight Android automation tool built to automatically react to ticket availability notifications from the TicketSwap app. Its goal is to minimize delay between ticket drop alerts and user actions like opening the app and tapping "Add to cart".
 
+![Demo](demo.gif)
+
 ## 🚀 Features
 
 - 📬 Listens for push notifications from the TicketSwap app
