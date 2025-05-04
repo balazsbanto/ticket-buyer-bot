@@ -21,11 +21,8 @@ TicketSwapBot is a lightweight Android automation tool built to automatically re
 
 1. Clone this repo.
 2. Open in Android Studio.
-3. Grant required permissions:
-   - Notification access
-   - Accessibility access
-4. Install the app on your device/emulator.
-5. Optionally, customize supported strings in different languages in the source code.
+3. Install the app on your device (real device, since TicketSwap might not run correctly on an emulator).
+4. Optionally, customize supported strings in different languages in the source code.
 
 ## 📥 How to Install Directly
 You can skip building from source by downloading the latest APK from the [Releases page](https://github.com/balazsbanto/ticket-buyer-bot/releases).
@@ -43,6 +40,8 @@ These are granted manually by the user in system settings.
 🌐 The app currently only works with the English language interface, as it identifies the "Add to cart" button by matching its text.
 
 🎯 It will attempt to add all tickets for which you receive notifications. This can be refined in the NotificationListenerService by filtering based on specific event titles or other attributes.
+
+📱 TicketSwap does not work reliably on emulators — it may use emulator detection. For best results, use a real device, or explore options to bypass emulator detection.
 
 ## 🤖 Intended Use
 
