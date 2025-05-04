@@ -74,8 +74,7 @@ class MainActivity : AppCompatActivity() {
     private fun isAccessibilityServiceEnabled(): Boolean {
         val expectedService = ComponentName(this, MyAccessibilityService::class.java).flattenToString()
         val enabledServices = Settings.Secure.getString(contentResolver, Settings.Secure.ENABLED_ACCESSIBILITY_SERVICES)
-        Log.d(TAG, "enabledServices")
-        Log.d(TAG, enabledServices)
+        Log.d(TAG, "enabledServices: ${enabledServices ?: "null"}")
         return enabledServices
             ?.split(":")
             ?.any { it.equals(expectedService, ignoreCase = true) } == true

@@ -1,6 +1,6 @@
-# TicketBuyerBot 🕵️🎟️
+# TicketSwapBot 🕵️🎟️
 
-TicketBuyerBot is a lightweight Android automation tool built to automatically react to ticket availability notifications from the TicketSwap app. Its goal is to minimize delay between ticket drop alerts and user actions like opening the app and tapping "Add to cart".
+TicketSwapBot is a lightweight Android automation tool built to automatically react to ticket availability notifications from the TicketSwap app. Its goal is to minimize delay between ticket drop alerts and user actions like opening the app and tapping "Add to cart".
 
 ![Demo](demo.gif)
 
@@ -27,6 +27,10 @@ TicketBuyerBot is a lightweight Android automation tool built to automatically r
 4. Install the app on your device/emulator.
 5. Optionally, customize supported strings in different languages in the source code.
 
+## 📥 How to Install Directly
+You can skip building from source by downloading the latest APK from the [Releases page](https://github.com/balazsbanto/ticket-buyer-bot/releases).
+Once downloaded, install it on your Android device and manually grant the required permissions in system settings.
+
 ## 🔐 Permissions
 
 This app requires the following permissions to function:
@@ -34,6 +38,11 @@ This app requires the following permissions to function:
 - `BIND_ACCESSIBILITY_SERVICE`
 
 These are granted manually by the user in system settings.
+
+##  ⚠️ Limitations & Room for Improvement
+🌐 The app currently only works with the English language interface, as it identifies the "Add to cart" button by matching its text.
+
+🎯 It will attempt to add all tickets for which you receive notifications. This can be refined in the NotificationListenerService by filtering based on specific event titles or other attributes.
 
 ## 🤖 Intended Use
 
