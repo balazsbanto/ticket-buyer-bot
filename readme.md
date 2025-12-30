@@ -1,3 +1,5 @@
+# UPDATE: The app no longer works—TicketSwap has released a patch. I may release a new solution soon, but no promises.
+
 # TicketSwapBot 🕵️🎟️
 
 TicketSwapBot is a lightweight Android automation tool built to automatically react to ticket availability notifications from the TicketSwap app. Its goal is to minimize delay between ticket drop alerts and user actions like opening the app and tapping "Add to cart".
